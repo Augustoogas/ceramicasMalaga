@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cerámica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="contenedor-logo">
+           <img src="images/ceramicaslogo.jpeg" alt=""class ="contenedor-logos_imagen">
+    </div>
+    
+    <div class="contenedor-form">
+        <div class="contenedor-form_nombre">
+                <label for="nombreModelo">Nombre:</label>
+                <input type="text" id="nombreModelo" name="nombreModelo" required>
+                <br>
+
+                <label for="calidad">Calidad:</label>
+                <input type="text" id="calidad" name="calidad" required>
+                <br>
+        </div>
+        <form id="calculadoraForm">
+            <label for="precioMetro">Precio por Metro:</label>
+            <input type="number" id="precioMetro" name="precioMetro" required>
+            <br>
+
+            <label for="metrosCaja">Metros por Caja:</label>
+            <input type="number" id="metrosCaja" name="metrosCaja" required>
+            <br>
+            
+            <label for="metrosSolicitados">Metros Solicitados:</label>
+            <input type="number" id="metrosSolicitados" name="metrosSolicitados" required>
+            <br>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+       
+        <br>
+    </div>
+    <div id="resultado"></div>
+
+    <div class="contenedor-botones">
+        <button class="boton" type="button" onclick="modificarPrecioPastina()">Modificar Precio de Pastina</button>
+        <button class="boton" type="button" onclick="modificarPrecioPegamento()">Modificar Precio de Pegamento</button>
+    </div>
+   
+    
+    <script src="calculadoraCeramica.js"></script>
+</body>
+</html>
