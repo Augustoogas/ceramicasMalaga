@@ -1,6 +1,6 @@
 // Precios constantes
-let precioPastina = 2200; // Precio inicial de la pastina
-let precioPegamento = 5300; // Precio inicial del pegamento
+let precioPastina = 2900; // Precio inicial de la pastina
+let precioPegamento = 7400; // Precio inicial del pegamento
 
 function calcular() {
     // Obtener los valores de los inputs
